@@ -6,3 +6,49 @@ body {
     padding: 0;
     }
 
+    * {
+        box-sizing: border-box;
+    }
+    
+    /* div page */
+#page {
+min-height: 100vh;
+position: relative;
+width: 100%;
+background: #e3ebe5
+}
+
+/* header */
+header {
+    display: block;
+}
+
+/* nav */
+
+nav {
+    font-size: 1.2rem;
+    padding: 20px;
+}
+nav ol {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background: #d5d3dc;
+}
+
+
