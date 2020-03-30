@@ -21,6 +21,8 @@ background: #e3ebe5;
 /* header */
 header {
     display: block;
+    position: fixed;
+    width: 100%;
 }
 
 /* nav */
@@ -36,6 +38,7 @@ nav ol {
     align-items: center;
     justify-content: space-around;
     background: #d5d3dc;
+    top: 0;
     }
 
 li {
@@ -48,7 +51,6 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
     background: #e3ebe5;
    }
 
@@ -56,10 +58,10 @@ a:hover {
 
 div.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-input {
+.input {
     display: flex;
-    align-self: baseline;
+    align-self: auto;
 }
