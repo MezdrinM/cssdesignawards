@@ -55,18 +55,62 @@ header {
     margin: 0 auto;
     position: relative;
 }
-
+/* removed visibility:hidden */
 .header__fade-slider__slide {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,-50%,0);
-    visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     transition: all 1s ease;
 }
 
 .header__fade-slider__slide active {
     visibility: visible;
     opacity: 1;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.header__side-elements {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__side-elements a {
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 2.7em;
+}
+
+.menu-hamburger {
+    width: 24px;
+    border: 2px solid #282828;
+    border-width: 2px 0;
+}
+
+.menu-hamburger:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #282828;
+    margin: 3px 0;
+}
+
+a {
+    text-decoration: none;
+    transition: opacity .2s ease-in-out;
+}
+
+.cust-btn {
+    position: relative;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: .4em;
+    color: #282828;
+    padding: 5px 24px 5px 0;
 }
