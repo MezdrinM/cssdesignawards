@@ -21,10 +21,52 @@ overflow-x: hidden;
 /* header */
 header {
     display: block;
-    position: fixed;
     width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* nav */
+.header__main-wrapper {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 17px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    backface-visibility: hidden;
+}
+
+.flex-grid {
+    flex-basis: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header__fade-slider {
+    width: 150px;
+    height: 75px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header__fade-slider__slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.header__fade-slider__slide active {
+    visibility: visible;
+    opacity: 1;
+}
