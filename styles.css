@@ -132,3 +132,21 @@ section {
     padding-top: 60px;
     margin-bottom: 73px;
 }
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.home-wotd-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.home-wotd-wrapper {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .4em;
+    line-height: 1.rem;
+    margin-bottom: 1.5rem;
+}
