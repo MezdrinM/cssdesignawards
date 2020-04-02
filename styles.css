@@ -205,3 +205,20 @@ section {
         letter-spacing: .075em;
         line-height: 1.3em;
     }
+
+    .home-wotd__subtitle {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .home-wotd__subtitle, .home-wotd__meta {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.2em;
+        letter-spacing: .75em;
+    }
+
+    .home-wotd__meta {
+        font-size: 12px;
+        line-height: 1.6em;
+    }
