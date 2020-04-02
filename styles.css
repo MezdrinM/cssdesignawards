@@ -137,12 +137,12 @@ section {
     margin: 0 auto;
 }
 
-.home-wotd-wrapper {
+.home-wotd__wrapper {
     padding-left: 0;
     padding-right: 0;
 }
 
-.home-wotd-wrapper {
+.home-wotd__date {
     display: block;
     font-weight: 700;
     font-size: 12px;
@@ -150,3 +150,18 @@ section {
     line-height: 1.rem;
     margin-bottom: 1.5rem;
 }
+ .home-wotd__middle {
+     display: flex;
+     flex-flow: row nowrap;
+     align-items: flex-start;
+ }
+ .home-wotd__thumbnail {
+     margin-bottom: 50px!important;
+     width: 100%;
+     text-align: center;
+ }
+
+ .home-wotd__thumbnail img {
+     max-width: 100%;
+     display: inline-block;
+ }
