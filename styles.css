@@ -222,3 +222,26 @@ section {
         font-size: 12px;
         line-height: 1.6em;
     }
+
+    .home-wotd__desk.mobile {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .home-wotd__desk {
+        padding: 17px 7% 17px 14.3%;
+    }
+
+    .home-wotd__desk {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .home-wotd__desk p {
+        font-size: 12px;
+        letter-spacing: .75em;
+        font-weight: 500;
+        margin-bottom: 2.3em;
+        line-height: 1.7em;
+    }
