@@ -159,9 +159,49 @@ section {
      margin-bottom: 50px!important;
      width: 100%;
      text-align: center;
+     position: relative;
+     z-index: 1;
  }
 
  .home-wotd__thumbnail img {
      max-width: 100%;
      display: inline-block;
+     
  }
+  .home-wotd__side {
+      float: left;
+      width: 50%;
+      padding-bottom: 37px;
+      vertical-align: baseline;
+  }
+
+  .home-wotd__monogram {
+      width: 120px;
+      max-width: 100%;
+      display: block;
+      float: left;
+      margin: 0 0 0 20px;
+    }
+
+    .home-wotd__title, .home-wotd__subtitle, .home-wotd__meta {
+        position: relative;
+        left: 22px;
+    }
+
+    .home-wotd__title {
+        margin-top: .95em;
+        margin-bottom: .15em;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .home-wotd__title, .home-wotd__title a {
+        color: #282828;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: .075em;
+        line-height: 1.3em;
+    }
