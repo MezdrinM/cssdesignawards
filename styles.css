@@ -18,7 +18,7 @@ width: 100%;
 overflow-x: hidden;
 }
 
-header nav section {
+header, nav, section, figure {
     display: block;
 }
 
@@ -147,13 +147,14 @@ section {
     font-weight: 700;
     font-size: 12px;
     letter-spacing: .4em;
-    line-height: 1.rem;
-    margin-bottom: 1.5rem;
+    line-height: 1.2em;
+    margin-bottom: 1.5em;
 }
  .home-wotd__middle {
-     display: flex;
+     display: block;
      flex-flow: row nowrap;
      align-items: flex-start;
+     -webkit-box-align: start;
  }
  .home-wotd__thumbnail {
      margin-bottom: 50px!important;
@@ -166,8 +167,13 @@ section {
  .home-wotd__thumbnail img {
      max-width: 100%;
      display: inline-block;
-     
  }
+
+ .home-wotd__thumbnail a {
+     position: relative;
+     display: inline-block;
+ }
+
   .home-wotd__side {
       float: left;
       width: 50%;
@@ -223,25 +229,4 @@ section {
         line-height: 1.6em;
     }
 
-    .home-wotd__desk.mobile {
-        display: block;
-        float: left;
-        width: 50%;
-    }
-
-    .home-wotd__desk {
-        padding: 17px 7% 17px 14.3%;
-    }
-
-    .home-wotd__desk {
-        margin-right: 0;
-        margin-left: auto;
-    }
-
-    .home-wotd__desk p {
-        font-size: 12px;
-        letter-spacing: .75em;
-        font-weight: 500;
-        margin-bottom: 2.3em;
-        line-height: 1.7em;
-    }
+  
