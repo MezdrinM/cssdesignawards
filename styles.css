@@ -256,3 +256,30 @@ section {
         margin-bottom: 2.3em;
         line-height: 1.2em;
     } 
+
+    .home-wotd__scores {
+        width: calc(100% + 40px);
+        margin: 0 --20px;
+        background-color: #E2DED1;
+    }
+
+    .home-wotd__scores-top {
+        padding-top: 47px;
+    }
+    .home-wotd__judges {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+    } 
+
+    .singel-judge {
+        position: relative;
+        margin: 0;
+    }
+
+    .singel-judge img {
+        display: block;
+    }
