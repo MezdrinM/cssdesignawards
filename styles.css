@@ -283,3 +283,91 @@ section {
     .singel-judge img {
         display: block;
     }
+
+    .home-wotd__scores-bottom {
+        padding: 37px 17px 48px;
+    }
+
+    .home-wotd__scores-bottom .vote__item {
+        flex: 0 0 24%;
+    }
+
+    .vote-list {
+        display: flex;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+    
+    .vote__item {
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+
+    .home-wotd__scores-bottom .vote__circle {
+margin-bottom: -1px;
+transform: scale(.8);
+    }
+
+    .vote__circle {
+        display: inline-block;
+        vertical-align: top;
+        width: 1em;
+        height: 1em;
+        position: relative;
+        background-color: #c1bdb3;
+        border-radius: 50%;
+        font-size: 50px;
+    }
+
+    .vote__circle:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0.8em;
+        left: 0.8em;
+        bottom: 0.8em;
+        right: 0.8em;
+        border-radius: 50%;
+    }
+
+    .vote__caption {
+        font-weight: 700;
+    }
+
+    .home-wotd__scores-bottom .vote__cat {
+font-size: 11px;
+    }
+
+    .vote__cat {
+        text-transform: uppercase;
+    }
+
+    .vote__cat, .vote__score {
+        text-align: 16px;
+        letter-spacing: .35em;
+    }
+
+    .home-wotd__scores-bottom .vote__scope {
+        font-size: 14px;
+    } 
+
+    .home-wotd__scores-bottom .vote__summary-item {
+        padding: 2px 30px 0 0;
+        flex: 0 0 28%;
+    }
+
+    .vote__summary {
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .vote__summary span {
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: .075em;
+    }
