@@ -524,3 +524,58 @@ font-size: 11px;
         background-image: url(https://www.cssdesignawards.com/imgs/arrow-right-white.svg);
         margin-left: 10px;
     }
+
+    .single-project__title, .single-project__title a {
+        color: #282828;
+    }
+
+    .single-project__title {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: .065em;
+        margin-bottom: .4em;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .single-project__title::before {
+        background: linear-gradient(to left #f1efe9,rgba(241,239,233,0));
+        opacity: 0;
+    }
+
+    .single-project__title::before, .single-project__title::after {
+        content: " ";
+        display: block;
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: opasity .3s ease-in-out;
+    }
+
+    .single-project__scores {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: .075em;
+    }
+
+    .sp__single-score {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .sp__single-score:not(.jpanel):not(.active)::before {
+        background-image: url(https://www.cssdesignawards.com/imgs/icon-trophy-light.svg);
+    }
+
+    .sp__single-score:not(.jpanel)::before {
+        content: " ";
+        display: inline-block;
+        width: 12px;
+        height: 11px;
+        background-size: cover;
+        vertical-align: -2px;
+        margin-right: 4px;
+    }
