@@ -566,16 +566,13 @@ font-size: 11px;
         margin-right: 15px;
     }
 
-    .sp__single-score:not(.jpanel):not(.active)::before {
-        background-image: url(https://www.cssdesignawards.com/imgs/icon-trophy-light.svg);
-    }
-
-    .sp__single-score:not(.jpanel)::before {
-        content: " ";
+     .sp__single-score:not(.jpanel)::before {
+        content: '';
         display: inline-block;
         width: 12px;
         height: 11px;
         background-size: cover;
         vertical-align: -2px;
         margin-right: 4px;
+        background-image: url(https://www.cssdesignawards.com/imgs/icon-trophy.svg);
     }
