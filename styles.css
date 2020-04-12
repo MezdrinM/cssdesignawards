@@ -585,3 +585,18 @@ font-size: 11px;
         background-image: url(https://www.cssdesignawards.com/imgs/icon-trophy.svg);
     }
 
+    .homo-projects__more-button {
+        margin-top: -33px;
+        margin-bottom: 40px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .homo-projects__more-button .cust-btn {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+
