@@ -599,4 +599,20 @@ font-size: 11px;
         text-transform: uppercase;
     }
 
+    /* new div class="" promo-set */
+
+    .promo-sect {
+        margin-top: 76px;
+        margin-bottom: 60px;
+    }
+
+    .promo-sect__box {
+        text-align: center;
+    }
+
+    .promo-sect__box img {
+        width: 100%;
+    }
+
+
 
