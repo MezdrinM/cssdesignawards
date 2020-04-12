@@ -318,6 +318,10 @@ margin-bottom: -1px;
 transform: scale(.8);
     }
 
+    .vote__circle__icon.trophy.solid {
+        opacity: 1;
+    }
+
     .vote__circle {
         display: inline-block;
         vertical-align: top;
@@ -327,6 +331,7 @@ transform: scale(.8);
         background-color: #c1bdb3;
         border-radius: 50%;
         font-size: 50px;
+        right: 0;
     }
 
     .vote__circle:after {
@@ -338,6 +343,10 @@ transform: scale(.8);
         bottom: 0.8em;
         right: 0.8em;
         border-radius: 50%;
+    }
+
+    .vote__circle__icon.trophy {
+        background: url(https://www.cssdesignawards.com/imgs/icon-trophy.svg) center center no-repeat;
     }
 
     .vote__caption {
