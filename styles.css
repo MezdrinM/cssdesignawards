@@ -3,7 +3,8 @@ body {
     font-size: 10px;
     line-height: 1;
     background-color: #f1efe9;
-    overflow-y: scroll
+    overflow-y: scroll;
+    margin: 0;
     }
 
     * {
@@ -16,6 +17,10 @@ min-height: 100vh;
 position: relative;
 width: 100%;
 overflow-x: hidden;
+}
+
+article {
+    margin: 0;
 }
 
 header, nav, section, figure, article {
@@ -136,6 +141,7 @@ section {
 .container {
     padding: 0 20px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .home-wotd__wrapper {
@@ -375,7 +381,7 @@ font-size: 11px;
 
     /* section class="home-projects" */
 
-    .home-projects, .container {
+    .home-projects .container {
         width: 100%;
     }
 
@@ -426,13 +432,15 @@ font-size: 11px;
     .projects-list {
         padding: 0;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         vertical-align: baseline;
+        -webkit-box-pack: justify;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
     }
 
     .single-project {
-        width: 50%;
         padding: 0 20px;
         margin-bottom: 102px;
     }
@@ -576,3 +584,4 @@ font-size: 11px;
         margin-right: 4px;
         background-image: url(https://www.cssdesignawards.com/imgs/icon-trophy.svg);
     }
+
