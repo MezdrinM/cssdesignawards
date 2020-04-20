@@ -344,6 +344,13 @@ h3 {
   padding: 0;
 }
 
+@media (max-width: 1279px) {
+  .home-wotd__judges {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .singel-judge {
   position: relative;
   margin: 0;
@@ -561,6 +568,11 @@ ul {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
+@media (max-width: 1279px) {
+  .projects-list {
+    padding: 0;
+  }
+}
 
 .single-project {
   padding: 0 20px;
@@ -578,6 +590,11 @@ ul {
   }
 }
 
+@media (max-width: 1279px) {
+  .single-project {
+    width: 50%;
+  }
+}
 .single-project > div {
   display: block;
   margin: 0 auto;
@@ -856,6 +873,12 @@ li {
 
 @media (max-width: 767px) {
   footer .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 1279px) {
+  .last-item {
     display: none;
   }
 }
