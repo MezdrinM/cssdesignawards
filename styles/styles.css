@@ -495,12 +495,24 @@ ul {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .home-projects .container {
+    width: 100%;
+  }
+}
+
 .home-projects h2 {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 5.6em;
 }
 
+@media (max-width: 767px) {
+  .home-projects h2 {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}
 .cust-btn {
   display: inline-block;
   position: relative;
@@ -553,6 +565,17 @@ ul {
 .single-project {
   padding: 0 20px;
   margin-bottom: 102px;
+}
+
+@media (max-width: 767px) {
+  .single-project {
+    width: 360px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 45px;
+    padding: 0;
+  }
 }
 
 .single-project > div {
