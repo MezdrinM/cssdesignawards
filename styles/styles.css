@@ -898,6 +898,7 @@ footer.main {
     order: 2;
     flex-basis: 50%;
   }
+}
 
   @media (max-width: 1279px) {
     footer.main .flex-grid.mobile-top {
@@ -906,6 +907,7 @@ footer.main {
       padding-bottom: 30px;
     }
   }
+
 .text-center {
   text-align: center;
 }
