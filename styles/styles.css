@@ -632,9 +632,23 @@ ul {
   }
 }
 
+@media (max-width: 767px) {
+  .projects-list {
+    flex-flow: column;
+  }
+}
+
 .single-project {
   padding: 0 20px;
   margin-bottom: 102px;
+}
+
+
+
+@media (max-width: 1279px) {
+  .single-project {
+    width: 50%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -648,11 +662,6 @@ ul {
   }
 }
 
-@media (max-width: 1279px) {
-  .single-project {
-    width: 50%;
-  }
-}
 .single-project > div {
   display: block;
   margin: 0 auto;
