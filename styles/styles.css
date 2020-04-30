@@ -232,7 +232,7 @@ section, figure {
 .home-wotd__thumbnail img {
   display: block;
   box-shadow: 10px 15px 35px -5px rgba(0,0,0,.25);
-  transition;: box-shadow .2s.;
+  transition: box-shadow .2s;
 }
 
 @media (max-width: 1279px) {
@@ -429,7 +429,6 @@ h3 {
 
 .vote-list {
   display: flex;
-  flex-flow: row wrap;
 }
 
 ol,
@@ -440,23 +439,6 @@ ul {
 .vote__item {
   display: block;
   position: relative;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .home-wotd__scores-bottom .vote__item {
-    flex: 0 0 50%;
-    padding: 0px 10px 42px;
-  }
-}
-
-.home-wotd__scores-bottom .vote__circle {
-  margin-bottom: -1px;
-  transform: scale(0.8);
-}
-
-.vote__circle__icon.trophy.solid {
-  opacity: 1;
 }
 
 .vote__circle {
@@ -465,25 +447,13 @@ ul {
   width: 1em;
   height: 1em;
   position: relative;
+  border-radius: 50%;
   background-color: #c1bdb3;
-  border-radius: 50%;
   font-size: 50px;
-  right: 0;
-}
-
-.vote__circle:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0.8em;
-  left: 0.8em;
-  bottom: 0.8em;
-  right: 0.8em;
-  border-radius: 50%;
 }
 
 .vote__circle__icon.trophy {
-  background: url(icon-trophy.svg) center center no-repeat;
+background: url(./icons/icon-trophy.svg);
 }
 
 .vote__circle__slice {
@@ -492,27 +462,13 @@ ul {
   position: absolute;
   left: 0;
   top: 0;
-  clip: rect(auto, auto, auto, auto);
 }
-
 .vote__circle__bar {
   width: 1em;
   height: 1em;
-  position: absolute;
-  border: 0.08em solid #282828;
+  border: 0.8em solid black;
   border-radius: 50%;
-  clip: rect(0, 0.5em, 1em, 0);
-  transform: rotate(360deg);
-}
-
-.vote__circle__fill {
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  border: 0.08em solid #282828;
-  border-radius: 50%;
-  clip: rect(0, 0.5em, 1em, 0);
-  transform: rotate(180deg);
+  clip: rect(0,.5em,1em.0);
 }
 
 .vote__caption {
