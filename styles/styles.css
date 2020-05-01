@@ -423,12 +423,30 @@ h3 {
   padding: 37px 17px 48px;
 }
 
+@media (max-width: 1279px) {
+  .home-wotd__scores-bottom{
+    padding: 37px 13px 48px;
+  }
+}
 .home-wotd__scores-bottom .vote__item {
   flex: 0 0 24%;
 }
 
+@media (max-width: 767px) {
+  .home-wotd__scores-bottom .vote__item {
+    flex: 0 0 50%;
+    padding: 0 10px 42px;
+  }
+}
+
 .vote-list {
   display: flex;
+}
+
+@media (max-width: 767px) {
+.home-wotd__scores-bottom .vote-list {
+  flex-flow: row wrap;
+}
 }
 
 ol,
@@ -534,7 +552,6 @@ background: url(https://www.cssdesignawards.com/imgs/icon-trophy.svg) center cen
 
 .home-wotd__scores-bottom .vote__summary-item {
   padding: 2px 30px 0 0;
-  flex: 0 0 28%;
 }
 
 .vote__summary {
