@@ -439,6 +439,7 @@ ul {
 .vote__item {
   display: block;
   position: relative;
+  text-align: center;
 }
 
 .vote__circle {
@@ -448,12 +449,24 @@ ul {
   height: 1em;
   position: relative;
   border-radius: 50%;
-  background-color: #c1bdb3;
   font-size: 50px;
 }
 
 .vote__circle__icon.trophy {
-background: url(./icons/icon-trophy.svg);
+background: url(https://www.cssdesignawards.com/imgs/icon-trophy.svg) center center no-repeat;
+}
+
+.vote__circle__icon.trophy.solid {
+  opacity: 1;
+}
+
+.vote__circle__icon {
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
 }
 
 .vote__circle__slice {
@@ -463,16 +476,42 @@ background: url(./icons/icon-trophy.svg);
   left: 0;
   top: 0;
 }
+
+.vote__circle::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: .08em;
+  top: .08em;
+  bottom: .08em;
+  right: .08em;
+  border-radius: 50%;
+}
+
+.vote_circle[data-count="100"] .vote__circle__bar {
+  transform: rotate(360deg);
+}
 .vote__circle__bar {
   width: 1em;
   height: 1em;
-  border: 0.8em solid black;
+  position: absolute;
+  border: 0.08em solid #282828;
   border-radius: 50%;
   clip: rect(0,.5em,1em.0);
 }
 
+.vote_circle[data-count="100"] .vote__circle__fill {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  border: 0.8em solid #282828;
+  border-radius: 50%;
+  clip: rect(0,.5em,1em,0);
+  transform: rotate(180deg);
+}
 .vote__caption {
   font-weight: 700;
+  padding-top: 10px;
 }
 
 .home-wotd__scores-bottom .vote__cat {
@@ -485,7 +524,7 @@ background: url(./icons/icon-trophy.svg);
 
 .vote__cat,
 .vote__score {
-  text-align: 16px;
+  line-height: 16px;
   letter-spacing: 0.35em;
 }
 
